@@ -77,10 +77,21 @@ WSGI_APPLICATION = 'that_company_website.wsgi.application'
 
 DATABASES = {
     'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgres',
+        'USER': 'masteruser',
+        'PASSWORD': 'Pookie!43',
+        'HOST': 'that-company-db.c7sq6iea8j1r.us-east-1.rds.amazonaws.com',
+        'POST': '5432'
+    }
+}
+
+""" DATABASES = {
+    'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
-}
+} """
 
 
 # Password validation
