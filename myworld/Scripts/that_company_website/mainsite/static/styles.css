@@ -13,7 +13,7 @@ body {
 }
 
 article {
-  display: flex;
+  display: block;
   margin: 0px;
   padding: 0px;
   height: auto;
@@ -97,20 +97,43 @@ nav li {
 }
 
 .main-container {
-  background-image: url('images/night-time.jpg');
-  background-size: 100%;
-  background-repeat: no-repeat;
   min-height: 90vh;
   height: auto;
 }
 
-.hero-text {
+.hero-img {
+
+  width: 100%;
+}
+
+.media-container {
   margin: 10px 10px;
+  display: none;
+}
+
+.media-container h1, .media-container p {
+  color: #1f1f1f;
+}
+
+.hero-text {
+  position: absolute;
+  top: 10%;
+  margin: 0px 10px;
   color: #f1f1f1;
 }
 
 .hero-text p {
   font-size: 22px;
+  text-align: center;
+}
+
+.media-hero {
+  text-align: center;
+  margin: 0px 10px;
+}
+
+.media-hero p {
+  font-size: 16px;
   text-align: center;
 }
 
@@ -322,9 +345,27 @@ footer .container .ft-section p {
     height: 180px;
   }
 
+  .hero-img {
+
+    width: 760px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .hero-text {
+    display: none;
+  }
+
+  .media-container {
+    display: block;
+  }
+  .media-container h1, .media-container p {
+
+  }
+
   .main-container {
-    background-size: 760px;
-    background-position-x: center;
+    min-height: 520px;
   }
 
   .logo {
