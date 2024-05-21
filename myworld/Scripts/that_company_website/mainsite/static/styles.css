@@ -13,11 +13,10 @@ body {
 }
 
 article {
-  display: block;
+  display: flex;
   margin: 0px;
   padding: 0px;
   height: auto;
-  min-height: 70vh;
 }
 
 article li {
@@ -98,17 +97,38 @@ nav li {
 }
 
 .main-container {
-  margin-left: 10px;
+  background-image: url('images/night-time.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  min-height: 90vh;
+  height: auto;
+}
+
+.hero-text {
+  margin: 10px 10px;
+  color: #f1f1f1;
+}
+
+.hero-text p {
+  font-size: 22px;
+  text-align: center;
+}
+
+.cta-text {
+  font-size: 22px;
+  justify-content: left;
+  text-align: left;
 }
 
 .main-h1 {
   font-size: 60px;
+  text-align: center;
 }
 
 .call-to-action {
-  background-color: #8CB9BD;
-  height: 25px;
-  width: 100px;
+  background-color: #ECB159;
+  height: 30px;
+  width: 90px;
   border: none;
   border-radius: 5px;
 }
@@ -116,6 +136,12 @@ nav li {
 .call-to-action a:link, .call-to-action a:visited {
   font-size: 16px;
   color: #1f1f1f;
+}
+
+.members-container, .details-container {
+  display: block;
+  margin: 10px 10px;
+  min-height: 75vh;
 }
 
 .subform {
@@ -294,6 +320,11 @@ footer .container .ft-section p {
 @media (max-width: 760px) {
   nav {
     height: 180px;
+  }
+
+  .main-container {
+    background-size: 760px;
+    background-position-x: center;
   }
 
   .logo {
