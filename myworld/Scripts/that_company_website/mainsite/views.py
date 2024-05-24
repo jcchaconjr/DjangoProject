@@ -28,6 +28,10 @@ def main(request):
   template = loader.get_template('main.html')
   return HttpResponse(template.render())
 
+def about(request):
+  template = loader.get_template('aboutus.html')
+  return HttpResponse(template.render())
+
 def testing(request):
   # mydata = Member.objects.filter(firstname='Julio').values()
   mydata = Member.objects.all().values()

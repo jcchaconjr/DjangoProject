@@ -17,7 +17,6 @@ article {
   margin: 0px;
   padding: 0px;
   height: auto;
-  min-height: 70vh;
 }
 
 article li {
@@ -74,6 +73,7 @@ nav li {
   min-width: 35%;
   text-decoration: none;
   padding: 10px 15px;
+  margin-left: 0 5px;
   color: #f1f1f1;
 }
 
@@ -95,6 +95,77 @@ nav li {
   display: flex;
   padding-top: 10px;
   padding-left: 35px;
+}
+
+.main-container {
+  min-height: 90vh;
+  height: auto;
+}
+
+.hero-img {
+
+  width: 100%;
+}
+
+.media-container {
+  margin: 10px 10px;
+  display: none;
+}
+
+.media-container h1, .media-container p {
+  color: #1f1f1f;
+}
+
+.hero-text {
+  position: absolute;
+  top: 10%;
+  margin: 0px 10px;
+  color: #f1f1f1;
+}
+
+.hero-text p {
+  font-size: 22px;
+  text-align: center;
+}
+
+.media-hero {
+  text-align: center;
+  margin: 0px 10px;
+}
+
+.media-hero p {
+  font-size: 16px;
+  text-align: center;
+}
+
+.cta-text {
+  font-size: 22px;
+  justify-content: left;
+  text-align: left;
+}
+
+.main-h1 {
+  font-size: 60px;
+  text-align: center;
+}
+
+.call-to-action {
+  background-color: #ECB159;
+  height: 35px;
+  width: 110px;
+  border: none;
+  border-radius: 5px;
+}
+
+.call-to-action a:link, .call-to-action a:visited {
+  font-size: 20px;
+  color: #1f1f1f;
+}
+
+.members-container, .details-container {
+  display: block;
+  margin: 10px 10px;
+  min-height: 75vh;
 }
 
 .subform {
@@ -272,12 +343,38 @@ footer .container .ft-section p {
 
 @media (max-width: 760px) {
   nav {
-    height: 180px;
+    min-height: 80px;
+    height: auto;
+  }
+
+  .hero-img {
+
+    width: 760px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .hero-text {
+    display: none;
+  }
+
+  .media-container {
+    display: block;
+  }
+  .media-container h1, .media-container p {
+
+  }
+
+  .main-container {
+    min-height: 520px;
   }
 
   .logo {
+    padding-top: 6px;
     font-size: 20px;
   }
+
   footer .container {
       grid-template-columns: repeat(1, 1fr);
   }
