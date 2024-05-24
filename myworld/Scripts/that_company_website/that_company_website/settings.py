@@ -75,7 +75,7 @@ WSGI_APPLICATION = 'that_company_website.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-DATABASES = {
+""" DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'postgres',
@@ -84,14 +84,14 @@ DATABASES = {
         'HOST': 'that-company-db.c7sq6iea8j1r.us-east-1.rds.amazonaws.com',
         'POST': '5432'
     }
-}
+} """
 
-""" DATABASES = {
+DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
-} """
+}
 
 
 # Password validation
